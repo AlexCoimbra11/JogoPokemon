@@ -15,7 +15,8 @@ class Pokemon:
 
         self.ataque = self.level * 5
         self.vida = self.level * 10
-
+    def __str__(self):
+        return'{}({})'.format(self.nome, self.level)
 
     def atacar(self, pokemon):
         ataque_efetivo = int((self.ataque * random.random() * 1.3))
