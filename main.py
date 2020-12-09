@@ -28,7 +28,15 @@ def escolher_pokemon_inicial(player):
         else:
             print('Escolha invalida!')
 
+def salvar_jogo(player):
+    try:
+        with open('database.db', 'wb') as arquivo:
+            pickle.dump(player, arquivo)
+            print('jogo salvo com sucesso')
 
+    except Exception as error:
+        print("Erro ao salvar o jogo")
+        print(error)
 
 def carregar_jogo():
     try:
