@@ -97,7 +97,7 @@ class Player(Pessoa):
     def explorar(self):
         if random.random()<=0.2:
             pokemon = random.choice(POKEMONS)
-            print('Um pokemon selvagem apareceu: {}'.format(pokemon))
+            print('Um pokemon selvagem apareceu.Que sorte!: {}'.format(pokemon))
             escolha = input('Deseja capturar pokemon?(s/n)')
             if escolha == 's':
                 if random.random()>= 0.2:
