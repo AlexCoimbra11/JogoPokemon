@@ -78,7 +78,7 @@ if __name__=='__main__':
     while True:
         print('___________________________________')
         print('O que deseja fazer?:')
-        print('1- Explorar pelo mundão a fora:')
+        print('1- Caçar pockemons pelo mundão a fora:')
         print('2- Lutar com um inimigo :')
         print('3- Pokeagenda')
         print('0 - Sair do jogo')
